@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "name": "Avocado",
+        "description": "Fresh and ripe Hass avocados, sustainably grown and harvested.",
+        "price": 1.99,
+        "quantity": 51
+    },
+    {
+        "id": 2,
+        "name": "Bananas",
+        "description": "Fresh, ripe, and bananas, sustainably grown and harvested.",
+        "price": 0.99,
+        "quantity": 100
+    },
+    {
+        "id": 3,
+        "name": "Strawberries",
+        "description": "Fresh and sweet strawberries, sustainably grown and harvested.",
+        "price": 3.99,
+        "quantity": 30
+    },
+    {
+        "id": 4,
+        "name": "Spinach",
+        "description": "Fresh and nutrient-packed spinach, sustainably grown and harvested.",
+        "price": 2.49,
+        "quantity": 20
+    },
+    {
+        "id": 5,
+        "name": "Blueberries",
+        "description": "Fresh and antioxidant-rich blueberries, sustainably grown and harvested.",
+        "price": 4.99,
+        "quantity": 25
+    },
+    {
+        "id": 6,
+        "name": "Carrots",
+        "description": "Fresh and sweet carrots, sustainably grown and harvested.",
+        "price": 1.49,
+        "quantity": 40
+    },
+    {
+        "id": 7,
+        "name": "Kale",
+        "description": "Fresh and nutrient-packed kale, sustainably grown and harvested.",
+        "price": 2.99,
+        "quantity": 15
+    },
+    {
+        "id": 8,
+        "name": "Broccoli",
+        "description": "Fresh and nutrient-packed broccoli, sustainably grown and harvested.",
+        "price": 2.99,
+        "quantity": 20
+    },
+    {
+        "id": 9,
+        "name": "Apples",
+        "description": "Fresh and crisp apples, sustainably grown and harvested.",
+        "price": 1.99,
+        "quantity": 50
+    },
+    {
+        "id": 10,
+        "name": "Oranges",
+        "description": "Fresh and sweet oranges, sustainably grown and harvested.",
+        "price": 1.49,
+        "quantity": 60
+    },
+    {
+        "id": 11,
+        "name": "Cauliflower",
+        "description": "Fresh and nutrient-packed cauliflower, sustainably grown and harvested.",
+        "price": 3.49,
+        "quantity": 15
+    },
+    {
+        "id": 12,
+        "name": "Bell Peppers",
+        "description": "Fresh and colorful bell peppers, sustainably grown and harvested.",
+        "price": 2.49,
+        "quantity": 30
+    },
+    {
+        "id": 13,
+        "name": "Garlic",
+        "description": "Fresh and aromatic garlic, sustainably grown and harvested.",
+        "price": 0.99,
+        "quantity": 50
+    }
+]
