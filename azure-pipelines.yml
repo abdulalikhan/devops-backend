@@ -42,4 +42,9 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/*.xml'
-
+    
+- task: PublishPipelineArtifact@1
+  inputs:
+    artifactName: 'backend'
+    targetPath: '$(Pipeline.Workspace)'
+    publishLocation: 'pipeline'
