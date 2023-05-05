@@ -1,6 +1,11 @@
-from app import app as flask_app
 import pytest
 import json
+import os
+import sys
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(parent_dir)
+
+from app import app as flask_app
 
 
 @pytest.fixture
