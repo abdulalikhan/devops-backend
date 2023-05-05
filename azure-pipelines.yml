@@ -18,6 +18,11 @@ strategy:
       python.version: '3.6'
     Python37:
       python.version: '3.7'
+dependencies:
+- pipeline: abdulalikhan.devops_frontend
+  branch: main
+  job: Build
+  displayName: 'Dependency: Build Frontend'
 
 steps:
 - task: UsePythonVersion@0
@@ -39,3 +44,4 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**./*.xml'
+
