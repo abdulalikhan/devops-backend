@@ -4,7 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 name: BackendPipeline
-trigger: none
+trigger:
+  branches:
+    include:
+    - main
 
 resources:
   pipelines:
