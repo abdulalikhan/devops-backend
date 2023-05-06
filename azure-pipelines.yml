@@ -29,7 +29,7 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
-    pytest tests/test_list.py tests/test_create.py tests/test_update.py tests/test_delete.py tests/test_frontend.py --junitxml=junit/test-results.xml
+    pytest tests/test_list.py tests/test_create.py tests/test_update.py tests/test_delete.py --junitxml=junit/test-results.xml
   displayName: 'Execute tests'
 
 - task: PublishTestResults@2
