@@ -9,12 +9,6 @@ trigger:
     include:
     - main
 
-resources:
-  pipelines:
-    - pipeline: devops-backend-trigger
-      source: abdulalikhan.devops-frontend
-      trigger: true
-
 pool:
   vmImage: ubuntu-latest
 strategy:
