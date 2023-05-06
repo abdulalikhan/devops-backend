@@ -10,7 +10,7 @@ def test_products_frontend():
     options.add_argument("--headless")
     driver = webdriver.Chrome(options=options)
 
-    driver.get("http://localhost:8081")
+    driver.get("http://devops-frontend-staging.azurewebsites.net/")
 
     product_table = driver.find_element(
         By.CLASS_NAME, "product-table-container")
