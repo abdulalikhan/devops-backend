@@ -41,7 +41,7 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**/*.xml'
+    testResultsFiles: '*.xml'
 
 - task: Docker@2
   displayName: 'Build and push Docker image'
