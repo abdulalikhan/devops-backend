@@ -52,7 +52,9 @@ steps:
     repository: 'abdulalikhan/devops-backend'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    tags: '$(Build.BuildId)'
+    tags: |
+      latest
+      $(Build.BuildId)
     
 - task: ArchiveFiles@2
   inputs:
