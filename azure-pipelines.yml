@@ -41,7 +41,15 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '*.xml'
+    testResultsFiles: '**/*.xml'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)/junit'
+    Contents: '*.xml'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/test-xml'
+    CleanTargetFolder: true
+  displayName: 'Copy test xml files'
 
 - task: Docker@2
   displayName: 'Build and push Docker image'
@@ -65,3 +73,8 @@ steps:
   inputs:
     artifactName: 'backend'
     pathToPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    artifactName: 'test-results'
+    pathToPublish: '$(Build.ArtifactStagingDirectory)/test-xml'
