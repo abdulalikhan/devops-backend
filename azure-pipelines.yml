@@ -43,7 +43,7 @@ steps:
   - task: dependency-check-build-task@6
     inputs:
       projectName: 'DevOps Project'
-      scanPath: '$(System.DefaultWorkingDirectory)'
+      scanPath: '$(System.DefaultWorkingDirectory)/**/*.py'
       format: 'HTML'
       failOnCVSS: '8'
       warnOnCVSSViolation: true
