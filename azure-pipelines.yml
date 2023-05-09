@@ -25,10 +25,11 @@ steps:
   - task: dependency-check-build-task@6
     inputs:
       projectName: 'DevOps Project'
-      scanPath: ""
+      scanPath: "/opt/hostedtoolcache/Python/3.9.16/x64/lib/python3.9/site-packages/"
       format: 'HTML'
       failOnCVSS: '8'
       warnOnCVSSViolation: true
+    displayName: "OWASP Dependency Scan"
 
   - script: |
       pip install pytest pytest-azurepipelines
